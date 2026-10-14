@@ -1,0 +1,22 @@
+# Test Order — Mirror Connectivity Verification
+
+**Order ID:** ORDER-20261014-TEST01
+**Timestamp:** 2026-10-14T00:15:00-04:00
+**Source:** JJ via public mirror (test)
+**Branch:** hairy-dawg/heavy-shift-21
+
+## Task
+Verify the public order mirror end-to-end: worker discovers this order,
+posts an acknowledgment, and publishes a completion receipt.
+
+## Scope
+Test-only. No product changes. Verify mirror discovery → ACK → receipt flow.
+
+## Constraints
+- Do not modify product source
+- Test task is connectivity verification only
+
+## Definition of Done
+- [ ] Worker discovers order via mirror_watcher.py
+- [ ] Worker posts ACK to private branch
+- [ ] Worker publishes receipt with test results
